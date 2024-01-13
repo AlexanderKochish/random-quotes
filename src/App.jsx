@@ -34,7 +34,6 @@ function App() {
     setBgRandomIndex(Math.floor(Math.random() * bgColors.length));
   };
 
-  console.log(quotes[qouteIndex]);
   return (
     <div id="wrapper" style={{ background: `${bgColors[bgRandomIndex]}` }}>
       <div id="quote-box">
@@ -49,10 +48,18 @@ function App() {
         </div>
         <div className="quote-box_bottom">
           <div className="quote-box_links">
-            <a href="#" style={{ background: `${bgColors[bgRandomIndex]}` }}>
+            <a
+              href="https://github.com/AlexanderKochish"
+              target="_blank"
+              style={{ background: `${bgColors[bgRandomIndex]}` }}
+            >
               <BsGithub className="quote-box_link" />
             </a>
-            <a href="#" style={{ background: `${bgColors[bgRandomIndex]}` }}>
+            <a
+              href="https://linkedin.com/in/alexander-kochish-68a48b266"
+              target="_blank"
+              style={{ background: `${bgColors[bgRandomIndex]}` }}
+            >
               <BsLinkedin className="quote-box_link" />
             </a>
           </div>
